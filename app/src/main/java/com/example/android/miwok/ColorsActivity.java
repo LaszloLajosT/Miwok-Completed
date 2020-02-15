@@ -18,14 +18,14 @@ public class ColorsActivity extends AppCompatActivity {
         ArrayList<Word> words = new ArrayList<Word>();
 
         //or you can add this way word to the list
-        words.add(new Word("red", "weṭeṭṭi"));
-        words.add(new Word("green", "chokokki"));
-        words.add(new Word("brown", "ṭakaakki"));
-        words.add(new Word("gray", "ṭopoppi"));
-        words.add(new Word("black", "kululli"));
-        words.add(new Word("white", "kelelli"));
-        words.add(new Word("dusty yellow", "ṭopiisә"));
-        words.add(new Word("mustard yellow", "chiwiiṭә"));
+        words.add(new Word("red", "weṭeṭṭi", R.drawable.color_red));
+        words.add(new Word("mustard yellow", "chiwiiṭә", R.drawable.color_mustard_yellow));
+        words.add(new Word("dusty yellow", "ṭopiisә", R.drawable.color_dusty_yellow));
+        words.add(new Word("green", "chokokki", R.drawable.color_green));
+        words.add(new Word("brown", "ṭakaakki", R.drawable.color_brown));
+        words.add(new Word("gray", "ṭopoppi", R.drawable.color_gray));
+        words.add(new Word("black", "kululli", R.drawable.color_black));
+        words.add(new Word("white", "kelelli", R.drawable.color_white));
 
 
 
@@ -34,7 +34,7 @@ public class ColorsActivity extends AppCompatActivity {
         // simple_list_item_1.xml layout resource defined in the Android framework.
         // This list item layout contains a single {@link TextView}, which the adapter will set to
         // display a single word.
-        WordAdapter adapter = new WordAdapter(this, words);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_colors);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
