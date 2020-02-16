@@ -67,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(familyIntent);
             }
         });
-
         // Find the View that shows the colors category
         TextView colors = findViewById(R.id.colors);
 
